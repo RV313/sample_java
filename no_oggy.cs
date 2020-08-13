@@ -7,9 +7,11 @@ class NoOggyChecker
   {
     foreach (var name in names)
     {
-        if(name.StartsWith("oggy")) {
+        if(name.StartsWith("oggy")) 
+		{
             Console.WriteLine($"Need to remove {name}!");
             names.Remove(name);
+			name--;
         }
     }
   }
